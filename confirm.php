@@ -30,9 +30,9 @@
         'お問い合わせ内容' => $message
     ];
 
-    foreach ($field as $label => $value) {
+    foreach ($fields as $label => $value) {
         if (trim($value) === '') {
-            $errors[] = '未入力';
+            $errors[] = "{$label}が未入力です。";
         }
     }
     ?>
@@ -69,30 +69,30 @@
         <li><a href="section2">人気投稿</a></li><br>
         <li><a href="section3">エンジニアおすすめ商品</a></li><br>
         <li><a href="section4">エンジニアおすすめ記事</a></li><br>
-        <li><a href="section5">投稿ページ</a></li>
+        <li><a href="contact.php#section5">投稿ページ</a></li>
     </ul>
 </nav>
 </aside>
 
     <table border="2">
         <tr>
-            <th>お名前</th>
+            <th scope="row">お名前</th>
             <td><?= e($name) ?></td>
         </tr>
         <tr>
-            <th>会社名</th>
+            <th scope="row">会社名</th>
             <td><?= e($companyName) ?></td>
         </tr>
         <tr>
-            <th>メールアドレス</th>
+            <th scope="row">メールアドレス</th>
             <td><?= e($email) ?></td>
         </tr>
         <tr>
-            <th>年齢</th>
+            <th scope="row">年齢</th>
             <td><?= e($age) ?></td>
         </tr>
         <tr>
-            <th>お問い合わせ内容</th>
+            <th scope="row">お問い合わせ内容</th>
             <td><?= nl2br(e($message)) ?></td>
         </tr>
     </table>
@@ -109,6 +109,7 @@
 
 </form>
 <?php endif; ?>
+<script src="style.js"></script>
 </body>
 </html>
 

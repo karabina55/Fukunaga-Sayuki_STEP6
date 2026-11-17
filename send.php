@@ -25,8 +25,8 @@
             "メールアドレス: {$email}\n" .
             "年齢: {$age}\n\n" .
             "お問い合わせ内容:\n{$message}\n";
-    $to = '受信先@gmail.com';
-    $from = '送信先@gmai.com';
+    $to = 'fuyongzaoxue@gmail.com';
+    $from = 'fuyongzaoxue@gmail.com';
     $headers = "From: {$from}";
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {

@@ -20,7 +20,7 @@
         <li><a href="section2">人気投稿</a></li><br>
         <li><a href="section3">エンジニアおすすめ商品</a></li><br>
         <li><a href="section4">エンジニアおすすめ記事</a></li><br>
-        <li><a href="section5">投稿ページ</a></li>
+        <li><a href="#section5">投稿ページ</a></li>
     </ul>
 </nav>
 </aside>
